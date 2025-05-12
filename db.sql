@@ -26,3 +26,6 @@ CREATE TABLE IF NOT EXISTS transaksi (
     FOREIGN KEY (id_mobil) REFERENCES mobil(id_mobil),
     FOREIGN KEY (id_pelanggan) REFERENCES pelanggan(id_pelanggan)
 );
+
+INSERT INTO mobil (merk, model, tahun_produksi, warna, harga, stok) VALUES
+('Toyota', 'Avanza', 2022, 'Silver', 220000000.00, 5);
